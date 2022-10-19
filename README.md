@@ -1,4 +1,4 @@
-### Code files for *"Estimating of translocated populations: a modification of the Jolly-Seber model"*
+## Code files for *"Estimating of translocated populations: a modification of the Jolly-Seber model"*
 
 **Authors:** Katherine T. Bickerton, John G. Ewen, Stefano Canessa, Nik C. Cole, Fay Frost, Rouben Mootoocurpen and Rachel McCrea
 
@@ -7,17 +7,22 @@
 *Code File Descriptions:*  
 **all_functions.R** - functions required for the running of all R scripts within this repository.  
 **SIM_generate_ch.R** - generates capture histories for the 12 simulated scenarios in the simulation study and saves to an RData file. Options to save in format for MATLAB are available but commented out.  
-**SIM_model_fitting.R** - fits standard POPAN formulation of Jolly-Seber model and modified translocation formulation of Jolly-Seber model to simulated data.  
-**LNG_model_fitting.R** - fits standard POPAN formulation of Jolly-Seber model and modified translocation formulation of Jolly-Seber model to case study data.  
+**SIM_model_fitting.R** - fits standard POPAN formulation of Jolly-Seber model and modified translocation formulation of Jolly-Seber model to simulated data. This may take time to run due to optimisation in R.    
+**LNG_model_fitting.R** - fits standard POPAN formulation of Jolly-Seber model and modified translocation formulation of Jolly-Seber model to case study data. Also fits models in packages *RMark* and *marked* with bootstrap confidence intervals. This may take some time to run due to optimisation in R.  
+**JS_trans_llik.cpp** - C++ likelihood underlying the standard and translocation formulations of the Jolly-Seber model.  
+**MATLAB** - Folder contains files to run models using MATLAB which is faster than using R. All files in the folder are either sourced from the **runLNG.m** file for the case study data or the **runSIMJS.m** file for the simulation study.  
 
 *Required R packages:*  
 **tidyverse**  
 **lubridate**  
 **gtools**  
+**Rcpp**  
+**RMark**  
+**marked**  
   
 *Program Versions:*  
 **R** version 4.1.2  
-
+**MATLAB** version 9.8.0 (R2020a)
 
 
 

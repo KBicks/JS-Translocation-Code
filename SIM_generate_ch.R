@@ -13,13 +13,9 @@ graphics.off()
 
 require(tidyverse)
 require(lubridate)
-require(ggthemes)
 require(gtools)
 
-source("JS_translocation_functions.R")
-
-
-
+source("all_functions.R")
 
 
 # 1. Generate simulated data ####
