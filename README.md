@@ -21,7 +21,9 @@
 **Rcpp**  
 **RMark**  
 **marked**  
-  
+
+  [![DOI](https://zenodo.org/badge/553999125.svg)](https://zenodo.org/badge/latestdoi/553999125)
+
 *Program Versions:*  
 **R** version 4.1.2  
 **MATLAB** version 9.8.0 (R2020a)
